@@ -24,7 +24,7 @@ recipe_selectors = [
 const closeButton = document.createElement('button');
 closeButton.id = '_rf_closebtn';
 closeButton.classList.add('_rfbtn');
-closeButton.textContent = 'Add to Cart';
+closeButton.textContent = 'Adicionar ao Carrinho';
 
 const disableButton = document.createElement('button');
 disableButton.id = '_rf_disablebtn';
@@ -33,7 +33,11 @@ disableButton.textContent = 'disable on this site';
 
 const controls = document.createElement('div');
 controls.id  = '_rf_header';
-controls.appendChild(document.createTextNode('Continente'));
+controls.appendChild(document.createTextNode('smartcart '));
+controls.appendChild(document.createTextNode('by'));
+controls.appendChild(document.createTextNode(' CONTINENTE'));
+
+
 controls.appendChild(closeButton);
 
 function hidePopup(){

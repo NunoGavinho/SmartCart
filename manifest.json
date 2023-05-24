@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Recipe Filter",
-  "short_name": "Recipe Filter",
+  "name": "smartcart by CONTINENTE",
+  "short_name": "smartcart by CONTINENTE",
   "version": "0.3",
-  "description": "Recipe Filter shows recipes found anywhere on the web in a handy popup.",
+  "description": "smartcart by CONTINENTE unlocks a new level of convenience for your cooking needs.",
   "icons": {
           "128": "img/logo.png"
   },
@@ -12,7 +12,7 @@
   ],
   "options_page": "html/options.html",
   "browser_action": {
-    "default_title": "Carrinho Continente",
+    "default_title": "smartcart by CONTINENTE",
     "default_icon": "img/logo.png"
   },
   "background": {

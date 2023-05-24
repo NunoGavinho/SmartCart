@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 #_rf_highlight {
     position: absolute !important;
     top: 0 !important;
@@ -17,11 +19,11 @@
     display: block;
     padding: 12px 8px;
     margin: 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.93);
     background: rgba(255, 0, 0);
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+    font-family: 'Orbitron', sans-serif; /* Add 'Orbitron' font and fallback sans-serif */
+    font-size: 25px;
+    font-weight: bolder;
     text-align: left;
     border-bottom: 1px solid #eee;
     border-radius: 6px;
@@ -31,14 +33,14 @@
 }
 ._rfbtn {
     color: rgb(255, 0, 0);
-    font-size: 100%;
-    font-weight: normal;
+    font-size: 80%;
+    font-weight: stronger;
     background-color: #F8F8F8;
     border: 1px solid #aba;
     border-radius: 6px;
     padding: 2px 8px;
     margin: 0 8px;
-    min-width: 130px;
+    min-width: 200px;
     text-decoration: none;
     float: right;
 }
