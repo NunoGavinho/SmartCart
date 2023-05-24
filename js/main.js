@@ -16,6 +16,7 @@ recipe_selectors = [
 	'.ingredientList',
 	'body > main > section.recipeHeader > div.recipeHeader__main > div > div.recipeHeader__main__left',
 	'body > main > section.recipeBody > div > div.recipeBody__right > div > div.recipeSteps__body > ul',
+	'#block-system-main > div > div > section.container.main > div > div.col-sm-3.ingredients > ul',
 	'body > main > section.recipeHeader > div.recipeHeader__main > div > div.recipeHeader__main__right > figure > img',
 	'body > main > section.recipeHeader > div.recipeHeader__main > div > div.recipeHeader__main__left > div.textBlock > h1',
 	'body > main > section.recipeHeader > div.recipeHeader__main > div > div.recipeHeader__main__right'
@@ -33,7 +34,7 @@ disableButton.textContent = 'disable on this site';
 
 const controls = document.createElement('div');
 controls.id  = '_rf_header';
-controls.appendChild(document.createTextNode('smartcart '));
+controls.appendChild(document.createTextNode('SmartCart '));
 controls.appendChild(document.createTextNode('by'));
 controls.appendChild(document.createTextNode(' CONTINENTE'));
 
@@ -75,7 +76,10 @@ function showPopup() {
 		document.body.insertBefore(clone, document.body.firstChild);
   
 		// handle the two new buttons we attached to the popup
-		closeButton.addEventListener('click', hidePopup);
+		closeButton.addEventListener('click', function() {
+			window.location.href = 'https://www.continente.pt/checkout/carrinho/';
+		  });
+		  
 		disableButton.addEventListener('click', function(b) {
 		  chrome.storage.sync.set({ [document.location.hostname]: true }, hidePopup);
 		});

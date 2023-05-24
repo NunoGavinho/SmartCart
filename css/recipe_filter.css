@@ -2,6 +2,7 @@
 
 #_rf_highlight {
     position: absolute !important;
+	font-size: 50%;
     top: 0 !important;
     left: 50% !important;
     transform: translate(-50%, 0) !important;
